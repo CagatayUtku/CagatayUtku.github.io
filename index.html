@@ -61,15 +61,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Salary Calculator</h1>
-        <label for="totalSalary">Total Salary:</label>
-        <input type="number" id="totalSalary" placeholder="Enter total salary" class="no-spinners">
+        <h1>MAAS HESAPLAMA</h1>
+        <label for="totalSalary">Toplam Maas:</label>
+        <input type="number" id="totalSalary" placeholder="TOPLAM MAASI GIRIN" class="no-spinners">
         <br><br>
-        <label for="monthDays">Total Days in Month:</label>
-        <input type="number" id="monthDays" placeholder="Enter total days in month" class="no-spinners">
+        <label for="monthDays">Aylik Kac Gun Calismali:</label>
+        <input type="number" id="monthDays" placeholder="TOPLAM AYLIK CALISMA GUNU" class="no-spinners">
         <br><br>
-        <label for="absentDays">Absent Days:</label>
-        <input type="number" id="absentDays" placeholder="Enter absent days" class="no-spinners">
+        <label for="absentDays">Kac Gun Ise Gelmedi:</label>
+        <input type="number" id="absentDays" placeholder="ISE GELINMEYEN GUN" class="no-spinners">
         <br><br>
         <button onclick="calculateSalary()">Calculate</button>
         <br><br>
@@ -77,12 +77,12 @@
     </div>
 
     <div class="container">
-        <h1>Product Calculator</h1>
-        <label for="unitPrice">Unit Price:</label>
-        <input type="number" id="unitPrice" placeholder="Unit price" class="no-spinners">
+        <h1>URUN UCRET HESAPLAMA</h1>
+        <label for="unitPrice">URUN BASI FIYAT:</label>
+        <input type="number" id="unitPrice" placeholder="URUN ADET FIYATI" class="no-spinners">
         <br><br>
-        <label for="totalAmount">Total Amount:</label>
-        <input type="number" id="totalAmount" placeholder="Total Amount" class="no-spinners">
+        <label for="totalAmount">KAC ADET URUN YAPILDI:</label>
+        <input type="number" id="totalAmount" placeholder="TOPLAM URUN ADEDI" class="no-spinners">
         <br><br>
         <button onclick="calculateTotal()">Calculate</button>
         <br><br>
@@ -122,7 +122,7 @@
             }
 
             const totalPricePay = unitPrice * totalAmount;
-            document.getElementById("result2").innerHTML = `Total to pay: $${totalPricePay.toFixed(2)}`;
+            document.getElementById("result2").innerHTML = `TOPLAM FIYAT TL${totalPricePay.toFixed(2)}`;
         }
     </script>
 </body>
