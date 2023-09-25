@@ -62,13 +62,13 @@
 <body>
     <div class="container">
         <h1>MAAS HESAPLAMA</h1>
-        <label for="totalSalary">Toplam Maas:</label>
+        <label for="totalSalary">TOPLAM MAAS:</label>
         <input type="number" id="totalSalary" placeholder="TOPLAM MAASI GIRIN" class="no-spinners">
         <br><br>
-        <label for="monthDays">Aylik Kac Gun Calismali:</label>
+        <label for="monthDays">AYLIK KAC GUN CALISMALI:</label>
         <input type="number" id="monthDays" placeholder="TOPLAM AYLIK CALISMA GUNU" class="no-spinners">
         <br><br>
-        <label for="absentDays">Kac Gun Ise Gelmedi:</label>
+        <label for="absentDays">KAC GUN ISE GELMEDI:</label>
         <input type="number" id="absentDays" placeholder="ISE GELINMEYEN GUN" class="no-spinners">
         <br><br>
         <button onclick="calculateSalary()">HESAPLA</button>
@@ -96,12 +96,12 @@
             const absentDays = parseInt(document.getElementById("absentDays").value);
 
             if (isNaN(totalSalary) || isNaN(absentDays)) {
-                document.getElementById("result").innerHTML = "Please enter valid numbers for Total Salary and Absent Days.";
+                document.getElementById("result").innerHTML = "Gecerli toplam gun veya gelinmeyen gun giriniz";
                 return;
             }
 
             if (monthDays <= 0 || monthDays > 31 || isNaN(monthDays)) {
-                document.getElementById("result").innerHTML = "Please enter a valid number of Total Days in Month (1-31).";
+                document.getElementById("result").innerHTML = "Gecerli gun sayisi giriniz. (1-31).";
                 return;
             }
 
@@ -117,7 +117,7 @@
             const totalAmount = parseFloat(document.getElementById("totalAmount").value);
 
             if (isNaN(unitPrice) || isNaN(totalAmount)) {
-                document.getElementById("result2").innerHTML = "Please enter valid numbers.";
+                document.getElementById("result2").innerHTML = "Gecerli numara giriniz.";
                 return;
             }
 
